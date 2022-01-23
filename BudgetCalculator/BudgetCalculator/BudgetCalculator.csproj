@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AEFD5E69-EC9B-4714-9139-6A7C916E9137}</ProjectGuid>
+    <ProjectGuid>{199DBE47-58A4-49EC-9D19-97B81B359598}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>BudgetCalculator</RootNamespace>
     <AssemblyName>BudgetCalculator</AssemblyName>
