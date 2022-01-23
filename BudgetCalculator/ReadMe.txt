@@ -1,0 +1,1 @@
+Run the console program within an IDE, Visual studio preferably
