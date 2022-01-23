@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BudgetCalculator
 {
-    internal class Program
+    internal class BudgetCalculatorProgram
     {
         //This program is super simple, not much to it. Just a little convenient tool that someone like me uses
         //because I dont have much money
