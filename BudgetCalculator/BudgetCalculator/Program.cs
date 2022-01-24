@@ -53,7 +53,7 @@ namespace BudgetCalculator
             Console.WriteLine("Do you have a motorcycle? yes or no?");
             string OwnMotorcycle = Console.ReadLine();
 
-            if (OwnMotorcycle != null || OwnMotorcycle == "yes")
+            if (OwnMotorcycle == "yes")
             {
                 //Gather the monthly cost of MotorCycle finance payments
                 Console.WriteLine("How much do you pay for motorcycle finance?  ");
@@ -64,10 +64,7 @@ namespace BudgetCalculator
                 MotorcycleInsurance = float.Parse(Console.ReadLine());
 
             }
-            else
-            {
-                return;
-            }
+            
 
             //Gather the monthly cost of credit payments
             Console.WriteLine("What is your monthly cost of credit payments  ");
@@ -104,12 +101,23 @@ namespace BudgetCalculator
 
         static void TotalBills()
         {
+            //Just for spicyness
             Console.ForegroundColor = ConsoleColor.Red;
 
-            float TotallBills = IncomeAfterTax - (HousingCost + UtiliyCost + CarFinance + CarInsurance + MotorCycleFinance + MotorcycleInsurance + CreditCostPM + AverageFuelPM + PlannedSpending);
-            string TotalBillsString = Convert.ToString(TotallBills);
+            //A simple subtraction of Bills from Income
+            float TotalBillsFloat = IncomeAfterTax - (HousingCost + UtiliyCost + CarFinance + CarInsurance + MotorCycleFinance + MotorcycleInsurance + CreditCostPM + AverageFuelPM + PlannedSpending);
+            string TotalBillsString = Convert.ToString(TotalBillsFloat);
+            float SpareMoney = IncomeAfterTax - TotalBillsFloat;
 
-            Console.WriteLine("Your Total spending on bills is: " + TotalBillsString);
+            Console.WriteLine("Your Total spending on bills is: £" + TotalBillsString + "\n" +
+                "So your spare money would be: £ " + SpareMoney);
+
+            Console.WriteLine("How much would you like to save?");
+            Savings = float.Parse(Console.ReadLine());           
+
+            Console.WriteLine("So you would be saving £" + Savings + ".\n" +
+                "Which would leave for the rest of the month: £" + (SpareMoney - Savings));
+
         }
 
         static void Main(string[] args)
@@ -120,7 +128,7 @@ namespace BudgetCalculator
 
             TotalBills();   
 
-            TestValues();  
+            //TestValues();  
 
             Console.ReadKey();
         }        
