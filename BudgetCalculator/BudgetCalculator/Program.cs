@@ -60,7 +60,7 @@ namespace BudgetCalculator
                 MotorCycleFinance = float.Parse(Console.ReadLine());
 
                 //Gather the monthly cost of MotorCycle Insurance payments               
-                Console.WriteLine("How much do you pay for motorcycle finance?  ");
+                Console.WriteLine("How much do you pay for motorcycle insurance?  ");
                 MotorcycleInsurance = float.Parse(Console.ReadLine());
 
             }
@@ -86,6 +86,8 @@ namespace BudgetCalculator
 
         static void TestValues()
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
+
             //testing to make sure the values display correctly
             Console.WriteLine("£" + IncomeAfterTax);
             Console.WriteLine("£" + HousingCost);
@@ -100,11 +102,23 @@ namespace BudgetCalculator
             Console.WriteLine("£" + PlannedSpending);
         }
 
+        static void TotalBills()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            float TotallBills = IncomeAfterTax - (HousingCost + UtiliyCost + CarFinance + CarInsurance + MotorCycleFinance + MotorcycleInsurance + CreditCostPM + AverageFuelPM + PlannedSpending);
+            string TotalBillsString = Convert.ToString(TotallBills);
+
+            Console.WriteLine("Your Total spending on bills is: " + TotalBillsString);
+        }
+
         static void Main(string[] args)
         {
             Console.Title = "MontlyBudgetCalculator";
 
             Questionair();
+
+            TotalBills();   
 
             TestValues();  
 
