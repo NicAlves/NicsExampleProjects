@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "199dbe47-58a4-49ec-9d19-97b81b359598": {
+      "ProjectGuid": "199dbe47-58a4-49ec-9d19-97b81b359598",
+      "DisplayName": "BudgetCalculator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
