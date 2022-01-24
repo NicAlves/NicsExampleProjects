@@ -11,10 +11,11 @@ namespace FinanceCalculator
         
         static void Main(string[] args)
         {
+            Console.Title = "Finance Calculator";
             Questionair questionair = new Questionair();
 
-            questionair.AgeQuestion();
-
+            questionair.SalaryQuestion();
+            
             Console.ReadKey();
         }
     }
@@ -55,6 +56,27 @@ namespace FinanceCalculator
         public void SalaryQuestion() //Gather the value for Salary
         {
             Console.WriteLine("What is your annual average income?");
+            float Salary = float.Parse(Console.ReadLine());
+
+            if (Salary >= 14000)
+            {
+                Console.WriteLine("Perfect");
+            }
+            else
+            {
+                Console.WriteLine("Did you input the right value?");
+                string SalaryAnswer = Console.ReadLine();
+                if (SalaryAnswer == "yes")
+                {
+                    Console.WriteLine("Sorry you dont qualify for a loan.");
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine("Okay lets try agian!");
+                    SalaryQuestion();
+                }
+            }
         }
         public void LoanAmountQuestion() //Gather the value for LoanAmount
         {
