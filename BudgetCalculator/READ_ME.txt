@@ -1,0 +1,1 @@
+Open the Program.cs file in the BudgetCalculator folder.
