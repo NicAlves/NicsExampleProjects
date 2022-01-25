@@ -12,10 +12,20 @@ namespace FinanceCalculator
         static void Main(string[] args)
         {
             Console.Title = "Finance Calculator";
-            Questionair questionair = new Questionair();
 
-            questionair.SalaryQuestion();
-            
+            Questionair questionair = new Questionair();            
+
+            questionair.AgeQuestion();
+
+            //questionair.SalaryQuestion();
+
+            //questionair.LoanAmountQuestion();
+
+            //questionair.LoanDurationQuestion();
+
+            questionair.InterestCalculator();
+
+
             Console.ReadKey();
         }
     }
@@ -24,13 +34,13 @@ namespace FinanceCalculator
         public int Age;
         public float Salary;
         public float LoanAmount;
-        public int loanDuration;
+        public int loanDurationInMonths;
         public float InterestRate;
 
         public void AgeQuestion() //Gather the value for Age
         {
             Console.WriteLine("How old are you?");
-            int Age = Convert.ToInt32(Console.ReadLine());
+            Age = Convert.ToInt32(Console.ReadLine());
             
             if (Age >= 18) //if they are old enough they may continue
             {
@@ -56,7 +66,7 @@ namespace FinanceCalculator
         public void SalaryQuestion() //Gather the value for Salary
         {
             Console.WriteLine("What is your annual average income?");
-            float Salary = float.Parse(Console.ReadLine());
+            Salary = float.Parse(Console.ReadLine());
 
             if (Salary >= 14000)
             {
@@ -81,10 +91,76 @@ namespace FinanceCalculator
         public void LoanAmountQuestion() //Gather the value for LoanAmount
         {
             Console.WriteLine("How much would you like to borrow?");
+            LoanAmount = float.Parse(Console.ReadLine());
+
+            if (LoanAmount > Salary)
+            {
+                Console.WriteLine("Sorry but that loan amount is too much.\n" +
+                    "Would you like to enter in a new value?");
+                string LoanAmountAnswer = Console.ReadLine();
+
+                if (LoanAmountAnswer == "yes")
+                {
+                    Console.WriteLine("Lets try again shall we?");
+                    LoanAmountQuestion();
+                }
+                else
+                {
+                    Environment.Exit(0);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Sweet lets continue!");
+            }
         }
         public void LoanDurationQuestion() //Gather the value for LoanDuration
         {
             Console.WriteLine("How long in months would you like to take the loan out for?");
+            loanDurationInMonths = int.Parse(Console.ReadLine());
+
+            if (loanDurationInMonths >= 60)
+            {
+                Console.WriteLine("Sorry but we do not offer loans over more than a 60 month period of time\n" +
+                    "Would you like to enter a new value in?");
+                string LoanDurationAnswer = Console.ReadLine();
+
+                if (LoanDurationAnswer == "yes")
+                {
+                    Console.WriteLine("Sweet lets try again!");
+                    LoanDurationQuestion();
+                }
+                else
+                {
+                    Environment.Exit(0);
+                }
+            }
         }
+        public void InterestCalculator() //a simple system to determine interest rate
+        {
+            Console.WriteLine("So your interest rate will be:");
+            
+
+            if (Age >= 18 && Age < 21)
+            {
+                InterestRate = 0.26f;
+            }
+            else if (Age >= 21 && Age < 24)
+            {
+                InterestRate = 0.20f;
+            }
+            else if (Age >= 24 && Age < 35)
+            {
+                InterestRate = 0.15f;
+            }
+            else if (Age >= 35)
+            {
+                InterestRate = 0.10f;
+            }
+            float InterestRateAnswer = InterestRate * 100; 
+
+            Console.WriteLine(InterestRateAnswer + "%");
+        } 
+        
     }
 }
