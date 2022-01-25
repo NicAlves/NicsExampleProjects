@@ -13,22 +13,25 @@ namespace FinanceCalculator
         {
             Console.Title = "Finance Calculator";
 
-            Questionair questionair = new Questionair();            
+            Questionair questionair = new Questionair(); //to instantiate the Questionair Class
+            Calculations calculations = new Calculations(); //to instantiate the Calculations Class
 
             questionair.AgeQuestion();
-
-            //questionair.SalaryQuestion();
-
-            //questionair.LoanAmountQuestion();
-
-            //questionair.LoanDurationQuestion();
-
+            Console.Clear();
+            questionair.SalaryQuestion();
+            Console.Clear();
+            questionair.LoanAmountQuestion();
+            Console.Clear();
+            questionair.LoanDurationQuestion();
+            Console.Clear();
             questionair.InterestCalculator();
+            Console.Clear();
+            calculations.Quote();
 
-
-            Console.ReadKey();
+            Console.ReadKey(); //Just to close the console on keypress at the end
         }
-    }
+    }   
+
     public class Questionair
     {
         public int Age;
@@ -119,7 +122,7 @@ namespace FinanceCalculator
             Console.WriteLine("How long in months would you like to take the loan out for?");
             loanDurationInMonths = int.Parse(Console.ReadLine());
 
-            if (loanDurationInMonths >= 60)
+            if (loanDurationInMonths > 60)
             {
                 Console.WriteLine("Sorry but we do not offer loans over more than a 60 month period of time\n" +
                     "Would you like to enter a new value in?");
@@ -138,7 +141,7 @@ namespace FinanceCalculator
         }
         public void InterestCalculator() //a simple system to determine interest rate
         {
-            Console.WriteLine("So your interest rate will be:");
+            //Console.WriteLine("So your interest rate will be:");
             
 
             if (Age >= 18 && Age < 21)
@@ -157,10 +160,23 @@ namespace FinanceCalculator
             {
                 InterestRate = 0.10f;
             }
-            float InterestRateAnswer = InterestRate * 100; 
+            //float InterestRateAnswer = InterestRate * 100; 
 
-            Console.WriteLine(InterestRateAnswer + "%");
+            //Console.WriteLine(InterestRateAnswer + "%");
         } 
         
+    }
+    public class Calculations //A place to store all the calculation types for this program
+    {
+        public float QuoteAmount;
+
+        public void Quote()
+        {
+            Questionair questionair = new Questionair();
+
+            QuoteAmount = questionair.LoanAmount + (questionair.LoanAmount * questionair.InterestRate);
+
+            Console.WriteLine("You quotation: £" + QuoteAmount);
+        }
     }
 }
