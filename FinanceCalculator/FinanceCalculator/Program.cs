@@ -149,7 +149,7 @@ namespace FinanceCalculator
         }
         public void InterestCalculator() //a simple system to determine interest rate
         {
-            //Console.WriteLine("So your interest rate will be:");
+            
 
 
             if (Age >= 18 && Age < 21)
@@ -169,16 +169,18 @@ namespace FinanceCalculator
                 InterestRate = 0.10f;
             }
 
+            DisplayedInterestRate = InterestRate * 100; //Getting a readable value for customer facing interest rate
+
+            Console.WriteLine("So your interest rate will be: " + DisplayedInterestRate);
+
         }
         public void FinalQuotation()  // Concatinates all the variables in a way to display the quote
         {
             Console.WriteLine("Here is your quote: ");
 
-            Quotation = (LoanAmount * InterestRate) + LoanAmount;
-
-            DisplayedInterestRate = InterestRate * 100;
-
-            MonthlyPayments = Quotation / loanDurationInMonths;
+            Quotation = (LoanAmount * InterestRate) + LoanAmount; //This is the total of the loan after including the interest that needs to be paid
+            
+            MonthlyPayments = Quotation / loanDurationInMonths; //this justs calculates how much per month the user would have to pay
 
             Console.WriteLine("You are borrowing: £" + LoanAmount);
 
