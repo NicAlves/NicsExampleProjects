@@ -14,13 +14,19 @@ namespace FinanceCalculator
         {
             Console.Title = "Finance Calculator";
 
-            Questionair questionair = new Questionair();
+            Questionair questionair = new Questionair(); //This is to instantiate questionair to be used in this main Class
 
+            //calling the methods from the Questionair class for the main purpose of the program.
             questionair.AgeQuestion();
+            Console.Clear();
             questionair.SalaryQuestion();
+            Console.Clear();
             questionair.LoanAmountQuestion();
+            Console.Clear();
             questionair.LoanDurationQuestion();
+            Console.Clear();
             questionair.InterestCalculator();
+            Console.Clear();
             questionair.FinalQuotation();
 
 
@@ -178,9 +184,9 @@ namespace FinanceCalculator
 
             Console.WriteLine("Loan to be paid over <" + loanDurationInMonths + "> months");
 
-            Console.WriteLine("Your interest Rate is set at " + DisplayedInterestRate + "%");
+            Console.WriteLine("Your interest Rate is set at: " + DisplayedInterestRate + "%");
 
-            Console.WriteLine("Over " + loanDurationInMonths + " months, you will a monthly some of £" + MonthlyPayments);
+            Console.WriteLine("Over " + loanDurationInMonths + " months, Your monthly payments will be: £" + MonthlyPayments + "P/M");
         }
 
     }
