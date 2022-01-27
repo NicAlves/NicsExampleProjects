@@ -35,7 +35,7 @@ namespace FinanceCalculator
         }
     }
 
-    public class Questionair //this stores all the question methods
+    public class Questionair //this stores all the question and calculation Methods
     {
         //storing all the questions as unique methods
         public int Age;
@@ -60,7 +60,7 @@ namespace FinanceCalculator
             {
                 Console.WriteLine("You are not old enough to recieve a loan from us. Sorry!\n" +
                     "Did you type your correct age?"); //checking if the user inputed the value correctly
-                string AgeAnswer = Console.ReadLine();
+                string AgeAnswer = Console.ReadLine().ToLower();
 
                 if (AgeAnswer == "no") //allows the user to try again
                 {
@@ -69,6 +69,8 @@ namespace FinanceCalculator
                 }
                 else //Exits the application
                 {
+                    Console.WriteLine("You are not old enough to recieve a loan from us. Sorry!");
+                    System.Threading.Thread.Sleep(1000);
                     Environment.Exit(0);
                 }
             }
@@ -85,10 +87,11 @@ namespace FinanceCalculator
             else
             {
                 Console.WriteLine("Did you input the right value?");
-                string SalaryAnswer = Console.ReadLine();
+                string SalaryAnswer = Console.ReadLine().ToLower();
                 if (SalaryAnswer == "yes")
                 {
                     Console.WriteLine("Sorry you dont qualify for a loan.");
+                    System.Threading.Thread.Sleep(1000);
                     Environment.Exit(0);
                 }
                 else
@@ -107,7 +110,7 @@ namespace FinanceCalculator
             {
                 Console.WriteLine("Sorry but that loan amount is too much.\n" +
                     "Would you like to enter in a new value?");
-                string LoanAmountAnswer = Console.ReadLine();
+                string LoanAmountAnswer = Console.ReadLine().ToLower();
 
                 if (LoanAmountAnswer == "yes")
                 {
@@ -134,7 +137,7 @@ namespace FinanceCalculator
             {
                 Console.WriteLine("Sorry but we do not offer loans over more than a 60 month period of time\n" +
                     "Would you like to enter a new value in?");
-                string LoanDurationAnswer = Console.ReadLine();
+                string LoanDurationAnswer = Console.ReadLine().ToLower();
 
                 if (LoanDurationAnswer == "yes")
                 {
