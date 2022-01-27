@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceCalculator", "FinanceCalculator\FinanceCalculator.csproj", "{12D35F10-13AC-4860-9751-1CE8B9BD3866}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceCalculator", "FinanceCalculator\FinanceCalculator.csproj", "{B48E7376-81E4-4769-A9E6-D7F2F7B5C32D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12D35F10-13AC-4860-9751-1CE8B9BD3866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12D35F10-13AC-4860-9751-1CE8B9BD3866}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12D35F10-13AC-4860-9751-1CE8B9BD3866}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12D35F10-13AC-4860-9751-1CE8B9BD3866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48E7376-81E4-4769-A9E6-D7F2F7B5C32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48E7376-81E4-4769-A9E6-D7F2F7B5C32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48E7376-81E4-4769-A9E6-D7F2F7B5C32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48E7376-81E4-4769-A9E6-D7F2F7B5C32D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {354814E5-4153-445F-89A6-A3B8960CF36B}
+		SolutionGuid = {9DDBCC6D-84A9-4748-8878-06410C63A6A7}
 	EndGlobalSection
 EndGlobal

@@ -8,43 +8,44 @@ namespace FinanceCalculator
 {
     internal class Program
     {
-        
+
+
         static void Main(string[] args)
         {
             Console.Title = "Finance Calculator";
 
-            Questionair questionair = new Questionair(); //to instantiate the Questionair Class
-            Calculations calculations = new Calculations(); //to instantiate the Calculations Class
+            Questionair questionair = new Questionair();
 
             questionair.AgeQuestion();
-            Console.Clear();
             questionair.SalaryQuestion();
-            Console.Clear();
             questionair.LoanAmountQuestion();
-            Console.Clear();
             questionair.LoanDurationQuestion();
-            Console.Clear();
             questionair.InterestCalculator();
-            Console.Clear();
-            calculations.Quote();
+            questionair.FinalQuotation();
+
+
 
             Console.ReadKey(); //Just to close the console on keypress at the end
         }
-    }   
+    }
 
-    public class Questionair
+    public class Questionair //this stores all the question methods
     {
+        //storing all the questions as unique methods
         public int Age;
         public float Salary;
         public float LoanAmount;
         public int loanDurationInMonths;
+        public float MonthlyPayments;
         public float InterestRate;
+        public float Quotation;
+        public float DisplayedInterestRate;
 
         public void AgeQuestion() //Gather the value for Age
         {
             Console.WriteLine("How old are you?");
             Age = Convert.ToInt32(Console.ReadLine());
-            
+
             if (Age >= 18) //if they are old enough they may continue
             {
                 Console.WriteLine("Sweet");
@@ -64,7 +65,7 @@ namespace FinanceCalculator
                 {
                     Environment.Exit(0);
                 }
-            } 
+            }
         }
         public void SalaryQuestion() //Gather the value for Salary
         {
@@ -95,7 +96,7 @@ namespace FinanceCalculator
         {
             Console.WriteLine("How much would you like to borrow?");
             LoanAmount = float.Parse(Console.ReadLine());
-
+            
             if (LoanAmount > Salary)
             {
                 Console.WriteLine("Sorry but that loan amount is too much.\n" +
@@ -116,6 +117,7 @@ namespace FinanceCalculator
             {
                 Console.WriteLine("Sweet lets continue!");
             }
+
         }
         public void LoanDurationQuestion() //Gather the value for LoanDuration
         {
@@ -142,7 +144,7 @@ namespace FinanceCalculator
         public void InterestCalculator() //a simple system to determine interest rate
         {
             //Console.WriteLine("So your interest rate will be:");
-            
+
 
             if (Age >= 18 && Age < 21)
             {
@@ -160,23 +162,26 @@ namespace FinanceCalculator
             {
                 InterestRate = 0.10f;
             }
-            //float InterestRateAnswer = InterestRate * 100; 
 
-            //Console.WriteLine(InterestRateAnswer + "%");
-        } 
-        
-    }
-    public class Calculations //A place to store all the calculation types for this program
-    {
-        public float QuoteAmount;
-
-        public void Quote()
-        {
-            Questionair questionair = new Questionair();
-
-            QuoteAmount = questionair.LoanAmount + (questionair.LoanAmount * questionair.InterestRate);
-
-            Console.WriteLine("You quotation: £" + QuoteAmount);
         }
+        public void FinalQuotation()  // Concatinates all the variables in a way to display the quote
+        {
+            Console.WriteLine("Here is your quote: ");
+
+            Quotation = (LoanAmount * InterestRate) + LoanAmount;
+
+            DisplayedInterestRate = InterestRate * 100;
+
+            MonthlyPayments = Quotation / loanDurationInMonths;
+
+            Console.WriteLine("You are borrowing: £" + LoanAmount);
+
+            Console.WriteLine("Loan to be paid over <" + loanDurationInMonths + "> months");
+
+            Console.WriteLine("Your interest Rate is set at " + DisplayedInterestRate + "%");
+
+            Console.WriteLine("Over " + loanDurationInMonths + " months, you will a monthly some of £" + MonthlyPayments);
+        }
+
     }
 }

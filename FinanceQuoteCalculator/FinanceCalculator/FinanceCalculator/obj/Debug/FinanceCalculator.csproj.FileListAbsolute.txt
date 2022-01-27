@@ -1,8 +1,0 @@
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\bin\Debug\FinanceCalculator.exe.config
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\bin\Debug\FinanceCalculator.exe
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\bin\Debug\FinanceCalculator.pdb
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\obj\Debug\FinanceCalculator.csproj.AssemblyReference.cache
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\obj\Debug\FinanceCalculator.csproj.SuggestedBindingRedirects.cache
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\obj\Debug\FinanceCalculator.csproj.CoreCompileInputs.cache
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\obj\Debug\FinanceCalculator.exe
-D:\GitHup\UKCloudProjects\NicProjects\FinanceQuoteCalculator\FinanceCalculator\FinanceCalculator\obj\Debug\FinanceCalculator.pdb
