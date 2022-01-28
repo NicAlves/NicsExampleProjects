@@ -1,13 +1,13 @@
-﻿<Properties StartupConfiguration="{B48E7376-81E4-4769-A9E6-D7F2F7B5C32D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FinanceCalculator/Program.cs">
+﻿<Properties StartupConfiguration="{1A771F53-0841-49CE-88CC-A6690F19DE78}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MacTest/Program.cs">
     <Files>
-      <File FileName="FinanceCalculator/Program.cs" Line="79" Column="10" />
+      <File FileName="MacTest/Program.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FinanceCalculator" expanded="True">
-            <Node name="FinanceCalculator" expanded="True">
+          <Node name="MacTest" expanded="True">
+            <Node name="MacTest" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -15,8 +15,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MacTest FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FinanceCalculator PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
