@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{B48E7376-81E4-4769-A9E6-D7F2F7B5C32D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FinanceCalculator/Program.cs">
+    <Files>
+      <File FileName="FinanceCalculator/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FinanceCalculator" expanded="True">
+            <Node name="FinanceCalculator" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FinanceCalculator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
