@@ -10,7 +10,6 @@ public class ZombieMovement : MonoBehaviour
     public float ZombieSpeed = 5;
     public GameObject Player;
     public int DebugZombieDistance;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +20,6 @@ public class ZombieMovement : MonoBehaviour
 
     void Gravity()
     {
-
-
         if (CC.isGrounded == false)
         {
             YMove = YMove - 0.5f * Time.deltaTime;
@@ -31,8 +28,6 @@ public class ZombieMovement : MonoBehaviour
         {
             YMove = 0;
         }
-
-
     }
 
     // Update is called once per frame
@@ -46,9 +41,7 @@ public class ZombieMovement : MonoBehaviour
         if (DebugZombieDistance == 0)
         {
             Debug.Log(V3);
-        }
-
-        
+        }        
     }
 
     private void FixedUpdate()
