@@ -14,6 +14,7 @@ print("please enter the amount of ram being used by the system before the mem sw
 RamInUse = int(input())
 
 print(f"""
+Information provided yielded the following results:
 
 Ram installed on the device: {RamInstalled}
 Ram being used on the device: {RamInUse}
