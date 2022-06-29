@@ -1,6 +1,3 @@
-# This script will check Swap memory on linux devices, if the swap mem is too full -
-# it will offload the memory onto the normal memory if there is enough space on the physical memory
-
 print("please enter a random amount of total swap mem in mb")
 InitialMem = int(input())
 
