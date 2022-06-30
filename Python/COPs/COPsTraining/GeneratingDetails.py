@@ -1,5 +1,7 @@
+import random
+
 PERMS = ""
-GenerateID = ""
+GenerateID = random.randint(1000, 100000)
 
 print("What is the CID of the device? ")
 CID = input()

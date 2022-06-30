@@ -13,14 +13,18 @@ RamInstalled = int(input())
 print("please enter the amount of ram being used by the system before the mem swap in MB")
 RamInUse = int(input())
 
-print("please enter the command you would like to use to offload the swap mem.")
-FirstInput = input()
+def swapoffandon():
+    print("please enter the command you want to use:")
+    swapoff = input()
+    if swapoff == "swapoff":
+        print("swap mem has been cleared.")
+        memafterswap = SwapUsedInitial + RamInUse
+        swapmemafterswap = SwapUsedInitial - SwapUsedInitial
+    else:
+        print("Command not recognised! Please try again.")
+        swapoffandon()
 
-if "swapoff" in FirstInput:
-    print("offloading swap mem into normal mem")
-    RamAfterOffloading = RamInUse + SwapUsedInitial
-else:
-    print("Sorry that is an invalid command. Please try again.")
+swapoffandon()
 
 print(f"""
 Information provided yielded the following results:
