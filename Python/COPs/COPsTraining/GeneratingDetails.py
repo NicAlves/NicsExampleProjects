@@ -1,4 +1,5 @@
 PERMS = ""
+GenerateID = ""
 
 print("What is the CID of the device? ")
 CID = input()
@@ -16,6 +17,8 @@ if "su" not in UserName:
     quit()
 
 print(f"""
+GenerateID: {GenerateID}
+
 User Name: {UserName}
 
 CID: {CID}
