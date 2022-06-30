@@ -32,6 +32,6 @@ Information provided yielded the following results:
 Ram installed on the device: {RamInstalled}
 Ram being used on the device: {RamInUse}
 Initial memory set: {InitialMem}
-Initial swap memory allocated for test: {SwapUsedInitial}
+Initial swap memory allocated for test: {}
 
 """)
