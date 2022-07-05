@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3115233c-c62e-41ab-b528-56b1df79cf90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/COPs/COPsTraining/Rando Practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COPs/COPsTraining/GeneratingDetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/COPs/COPsTraining/GeneratingDetails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COPs/COPsTraining/SwapOff.py" beforeDir="false" afterPath="$PROJECT_DIR$/COPs/COPsTraining/SwapOff.py" afterDir="false" />
-    </list>
+    <list default="true" id="3115233c-c62e-41ab-b528-56b1df79cf90" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,6 +110,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
