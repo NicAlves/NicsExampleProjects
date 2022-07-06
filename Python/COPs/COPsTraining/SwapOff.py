@@ -14,11 +14,11 @@ print("please enter the amount of ram being used by the system before the mem sw
 RamInUse = int(input())
 
 print("please enter the command you want to use:")
-swapoff = input()
-if swapoff == "swapoff":
+SwapOff = input()
+if SwapOff == "swapoff":
     print("swap mem has been cleared.")
-    memafterswap = SwapUsedInitial + RamInUse
-    swapmemafterswap = SwapUsedInitial - SwapUsedInitial
+    MemAfterSwap = SwapUsedInitial + RamInUse
+    SwapMemAfterSwap = SwapUsedInitial - SwapUsedInitial
 else:
     print("Command not recognised! Please try again.")
     quit()
