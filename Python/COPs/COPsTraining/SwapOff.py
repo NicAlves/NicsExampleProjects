@@ -13,18 +13,15 @@ RamInstalled = int(input())
 print("please enter the amount of ram being used by the system before the mem swap in MB")
 RamInUse = int(input())
 
-def swapoffandon():
-    print("please enter the command you want to use:")
-    swapoff = input()
-    if swapoff == "swapoff":
-        print("swap mem has been cleared.")
-        memafterswap = SwapUsedInitial + RamInUse
-        swapmemafterswap = SwapUsedInitial - SwapUsedInitial
-    else:
-        print("Command not recognised! Please try again.")
-        swapoffandon()
-
-swapoffandon()
+print("please enter the command you want to use:")
+swapoff = input()
+if swapoff == "swapoff":
+    print("swap mem has been cleared.")
+    memafterswap = SwapUsedInitial + RamInUse
+    swapmemafterswap = SwapUsedInitial - SwapUsedInitial
+else:
+    print("Command not recognised! Please try again.")
+    quit()
 
 print(f"""
 Information provided yielded the following results:
@@ -32,6 +29,8 @@ Information provided yielded the following results:
 Ram installed on the device: {RamInstalled}
 Ram being used on the device: {RamInUse}
 Initial memory set: {InitialMem}
-Initial swap memory allocated for test: {}
+Initial swap memory allocated for test: [ Nothing Yet ]
 
 """)
+
+
