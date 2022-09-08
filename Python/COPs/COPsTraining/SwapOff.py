@@ -1,3 +1,5 @@
+##lol
+
 print("please enter a random amount of total swap mem in mb")
 InitialMem = int(input())
 
@@ -32,5 +34,3 @@ Initial memory set: {InitialMem}
 Initial swap memory allocated for test: [ Nothing Yet ]
 
 """)
-
-
