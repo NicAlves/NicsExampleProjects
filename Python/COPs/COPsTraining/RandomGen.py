@@ -1,11 +1,19 @@
 import random
 
-print('Hello there, you are here because you cannot decide what cars to look at right now.'
-      'Here is what we think you should look at right now:'
-      '')
+# printing an intro:
+print('Hello there!\n'
+      'If you want us to choose a car for you, press any key now:')
+
+answer1 = input()
+if answer1 == 'yes':
+      print('Sweet, here is what we suggest you look at:')
+else:
+      print('Okay, see you next time!')
+      quit()
+
 
 # create list of cars:
-cars = ['Toyata', 'Merc', 'VW', 'Audi', 'Vauxhal']
+cars = ['Toyota', 'Honda', 'VW', 'Audi', 'Vauxhal']
 
 print(random.choice(cars))
 
