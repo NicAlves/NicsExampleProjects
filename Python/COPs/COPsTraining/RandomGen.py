@@ -2,7 +2,7 @@ import random
 
 # printing an intro:
 print('Hello there!\n'
-      'If you want us to choose a car for you, press any key now:')
+      'Do you want us to choose a car for you to look at? yes/no')
 
 answer1 = input()
 if answer1 == 'yes':
@@ -10,7 +10,6 @@ if answer1 == 'yes':
 else:
       print('Okay, see you next time!')
       quit()
-
 
 # create list of cars:
 cars = ['Toyota', 'Honda', 'VW', 'Audi', 'Vauxhal']
