@@ -19,7 +19,7 @@ print("***********************************")
 print("===================================")
 
 # Creating a delay in the program to give it more "life"
-time.sleep(3)
+time.sleep(1)
 
 print(f"Hey there! "
       f"To play this game, you will need to guess the number that the computer has chosen between from 1 to 100")
