@@ -50,6 +50,8 @@ while UserGuess != GeneratedNumber:
 
 time.sleep(1)
 os.system('cls')
-print(f"Nice one! You did it in {Attempts} attempts!"
-      "Try again to beat your score!")
+print("===================================")
+print("======= !!!!!NICE ONE!!!!! ========")
+print(f"    You did it in {Attempts} Attempts!!")
+print("") 
 
