@@ -1,1 +1,3 @@
-Yeah i cant code good yet but i will code good one day
+Dreaming of being a dev.
+
+One day :)
