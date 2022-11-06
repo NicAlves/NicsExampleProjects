@@ -12,6 +12,7 @@ GeneratedNumber = random.randint(1, 100)
 # Setting the number of attmpts veriable to 0 is just to create it into existance for us to manipulate downt he line.
 Attempts = 0
 
+# fancy
 print("===================================")
 print("***********************************")
 print("======= NumberGuessingGame ========")
