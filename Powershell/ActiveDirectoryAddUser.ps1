@@ -1,4 +1,5 @@
 ﻿# This script has been made to automate the user creation process. Work In Progress.
+# I need to add a "do" loop so the questions can loop if the user does not enter a valid answer
 
 # This just looks cool
 Write-Host "===============COPs============COPs================="
