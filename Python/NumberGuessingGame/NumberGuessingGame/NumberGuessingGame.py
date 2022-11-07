@@ -9,7 +9,7 @@ import os
 os.system('cls')
 # generating a random number that the user will then need to guess.
 GeneratedNumber = random.randint(1, 100)
-# Setting the number of attmpts veriable to 0 is just to create it into existance for us to manipulate downt he line.
+# Setting the number of attempts variable to 0 is just to create it into existence for us to manipulate down the line.
 Attempts = 0
 
 # fancy
