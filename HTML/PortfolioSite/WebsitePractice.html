@@ -19,6 +19,9 @@
 			header {
 				text-align: center;
 			}
+			.UserSignIn {
+				text-align: center;
+			}
 		</style>
 	</head>
 
@@ -43,19 +46,20 @@
 		<!--Creating inputs for the user-->
 		<div>
 			<Form>
-				<fieldset>
+				<fieldset class="UserSignIn">
 					<legend>Sign-up info</legend>
-					<label for="Email">Email: </label> <input id="Email" type="text" placeholder="Enter Email">
+					<label for="Email">Email: </label><br><input id="Email" type="text" placeholder="Enter Email">
 					<br>
-					<label for="Password">Password: </label> <input id="Password" type="password" placeholder="Enter Password">
+					<label for="Password">Password: </label><br><input id="Password" type="password" placeholder="Enter Password">
 					<br>
-					<label for="Username">Username: </label> <input id="Username" type="text" placeholder="Enter Username">
+					<label for="Username">Username: </label><br><input id="Username" type="text" placeholder="Enter Username">
 					<br>
-					<label for="BirthDate">BirthDate: </label> <input id="BirthDate" type="date">
+					<label for="BirthDate">BirthDate: </label><br><input id="BirthDate" type="date">
 					<br>
-					<label for="CheckBox">CheckBox: </label> <input id="CheckBox" type="checkbox">
+					<label for="CheckBox">T&C's: </label> <input id="CheckBox" type="checkbox">
 					<br>
-					<button><strong style="color: red;">Register</strong></button>
+					<br>
+					<button><strong>Register</strong></button>
 				</fieldset>
 				<br>
 			</Form>
@@ -66,6 +70,7 @@
 			<!--Seperating the title for CSS adjustment-->
 			<div class="TitleOfTechExperiance">
 				<h3>List Of technologies I have experience with:</h3>
+				<p>Click "Details" for more info</p>
 			</div>
 				<details>
 					<ul>
