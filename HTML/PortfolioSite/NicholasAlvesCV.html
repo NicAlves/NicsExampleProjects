@@ -26,6 +26,22 @@
 			.HIDETHIS {
 				display: none !important;
 			}
+			.ExperianceDiv {
+				text-align: center;
+			}
+			.Experiance {
+				text-align: left;
+				line-height: 0.1em;
+			}
+			.ExperianceFieldset {
+				text-align: left;
+			}
+			.JustCenter {
+				text-align: center;
+			}
+			.ListOfTechDiv {
+				text-align: center;
+			}
 		</style>
 	</head>
 
@@ -36,105 +52,117 @@
 		<header>
 			<!--Creating the links for external sites(GitHub, LinkedIn, and so on...)!-->
 			<div>
-				<h1>Nicholas Alves Portfolio</h1>
-				<h4>Important Links:</h4>
+				<h1><u>Nicholas Alves Portfolio</u></h1>
+				<h3>Fleet, Hampshire</h3>
+				<h3>SC & NPPV3 Clearance</h3>
+				<h3>07375698959 - nic.alves48@gmail.com</h3>
+				<h3>Important Links:</h3>
 				<button><a href= "https://github.com/ThatNicDude">My GitHub!</a></button>
 				<button><a href= "https://www.linkedin.com/in/nicholas-alves-b56026204/">My LinkedIn!</a></button>
 				<button><a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ">Very Important!</a></button>
-				<H3>About this page:</H3>
-				<p>This is where I am going to try and build a basic webpage to show off any Web Development skills I have learnt.</p>
+				<br>
+				<H3>Personal Statement:</H3>
+				<p>I have always had a passion for computers, technology, software, and gaming. I have a good problem-solving mindset, always looking for new solutions in a logical way. Working in IT means I am always problem solving, troubleshooting, and resolving issues. I enjoy working independently, when need be, but I also enjoy working within a team and having good working relationships. My ambition is to move into a more dev orientated role (Web Dev, Software Dev, DevOps). I look forward to what the future could hold for me within this industry.</p>
 				<br>
 			</div>
 		</header>
 
 		<!--Creating inputs for the user-->
-		<div>
-			<Form>
-				<fieldset class="UserSignIn">
-					<legend>Sign-up info</legend>
-					<label for="Email">Email: </label><br><input id="Email" type="text" placeholder="Enter Email">
+		<div class="JustCenter">
+			<button>
+				<details class="ExperianceDiv">
+					<summary>Experiance</summary>
+					<fieldset class="ExperianceFieldset">
+						<div class="Experiance">
+							<h2>Cloud Operations Junior Engineer</h2>
+							<h3>UKCloud</h3>
+							<h4>July 2022 - Present</h4>
+						</div>
+						<p>Currently working within Cloud Operations, my main duty is to monitor the health of the platform and troubleshoot and fix the issues that come up, talking to the relevant teams to help get the issues resolved if it is more complex. As a Junior Engineer I am constantly trying to learn new things regarding the platform and new troubleshooting techniques. Using and updating documentation is also a big part of the day-to-day work. I am also being given the opportunity to delve into automation using PowerShell and Python. As part of my role, I am exposed to a wide variety of technologies, including Linux, VMware, OpenStack, Storage solutions and more. The team's goal is to maintain 99.99% of availability for our customers.</p>
+						<br>
+						<div class="Experiance">
+							<h2>IT Infrastructure Technician</h2>
+							<h3>UKCloud</h3>
+							<h4>April 2021 - July 2022</h4>
+						</div>
+						<p>During my time as an apprentice with UKCloud, I worked in a small team to support hundreds of staff members within the company. This involved using tools such as Active Directory/Azure Active Directory, Intune, PDQ Inventory/Deploy, Office 365, Atlassian Jira/Confluence to service and action internal IT requests. My role also involved deploying and maintaining laptops and other hardware for employees, desks, and meeting rooms within the office. I also spent 6 months with our customer support / 1st line support team where constant communication with customers and internal teams was essential to ensure that any tickets were resolved in line with our SLAs. In addition to this I also spent time with the Cloud Operations team where I subsequently secured a full-time position after passing my apprenticeship.</p>
+						<br>
+						<div class="Experiance">
+							<h2>Team Leader</h2>
+							<h3>Greene King</h3>
+							<h4>Jan 2020 - Jan 2021</h4>
+						</div>
+						<p>During my time at Greene King, I worked at the Prince of Wales public house. As a team leader I was responsible for delivering an exceptional experience, and the service was carried out to the best standard. I was responsible for managing the staff on shift, assigning duties, ensuring that everyone was in a position where they could thrive and be a productive part of the team. There were also admin duties that came with being a team lead, such as end of night accounting, stock management and more.</p>
+						<br>
+						<div class="Experiance">
+							<h2>Assistant Chef</h2>
+							<h3>FlameBBQ</h3>
+							<h4>May 2017 - Oct 2019</h4>
+						</div>
+						<p>During my time with FlameBBQ, I worked in a fast paced, challenging and intense environment which strengthen my ability to work under pressure.</p>
+					</fieldset>
 					<br>
-					<label for="Password">Password: </label><br><input id="Password" type="password" placeholder="Enter Password">
-					<br>
-					<label for="Username">Username: </label><br><input id="Username" type="text" placeholder="Enter Username">
-					<br>
-					<label for="BirthDate">BirthDate: </label><br><input id="BirthDate" type="date">
-					<br>
-					<label for="CheckBox">T&C's: </label> <input id="CheckBox" type="checkbox">
-					<br>
-					<br>
-					<button><strong>Register</strong></button>
-				</fieldset>
-				<br>
-			</Form>
+				</details>
+			</button>
 		</div>
 
 		<!--A list of tech I have experiance with-->
-		<div>
+		<div class="JustCenter">
 			<!--Seperating the title for CSS adjustment-->
 			<div class="TitleOfTechExperiance">
 				<h3>List Of technologies I have experience with:</h3>
 				<p>Click "Details" for more info</p>
 			</div>
-				<details>
-					<ul>
-						<li>VMware vSphere & Cloud Director</li>
-						<li>Office 365 Management</li>
-						<li>PDQ Inventory and Deploy</li>
-						<li>Microsoft Windows 7, 10 and 11</li>
-						<li>Mac OS</li>
-						<li>Active directory and Azure Active Directory</li>
-						<li>Microsoft Windows Server 2012 R2, 2016, 2019</li>
-						<li>OpenStack Admin</li>
-						<li>Linux</li>
-						<li>Networking</li>
-						<li>Office 365 Management</li>
-						<li>Automation</li>
-						<li>Programming:</li>
-						<!--Programming languages that I have used listed out:-->
-						<ul>
-							<li>Python</li>
-							<li>C#</li>
-							<li>HTML & CSS</li>
-							<li>SQL</li>
-							<li>PowerShell</li>
-						</ul>
-					</ul>
-				</details>
+				<button class="ListOfTechDiv">
+					<details>
+						<summary>Technical Skills & experiance</summary>
+						<fieldset>
+							<ul>
+								<li>VMware vSphere & Cloud Director</li>
+								<li>Office 365 Management</li>
+								<li>PDQ Inventory and Deploy</li>
+								<li>Microsoft Windows 7, 10 and 11</li>
+								<li>Mac OS</li>
+								<li>Active directory and Azure Active Directory</li>
+								<li>Microsoft Windows Server 2012 R2, 2016, 2019</li>
+								<li>OpenStack Admin</li>
+								<li>Linux</li>
+								<li>Networking</li>
+								<li>Office 365 Management</li>
+								<li>Automation</li>
+								<li>Python</li>
+								<li>C#</li>
+								<li>HTML & CSS</li>
+								<li>PowerShell</li>
+							</ul>
+						</fieldset>
+					</details>
+				</button>
 				<br>
 			</ul>
+			<br>
 	 	</div>
-
-		<!--TestingTesting,1,2,3-->
-		<form>
-			<fieldset class="TestingTesting">
-				<legend>TestingTesting,1,2,3</legend>
-				<label>UserName</label><br><input id="username" type="text"><br>
-				<label>Password</label><br><input id="password" type="password"><br>
-				<label>Favourite Color</label><br><input id="color" type="color"><br>
-				<br>
-				<button>Submit</button>
-			</fieldset>
-		</form>
 	
 		<!--This adds a picture of motorcycles-->
 		<div class="BikeTesting">
 			<strong><u>Click the button below if you wanna see some motorycles</u></strong><br>
 			<br>
-			<button><details style="background-color: black;">
-				<p>This is pictures of my favourate motorcycles:) :</p>
-				<br>
-				<img src="https://pictures.topspeed.com/IMG/jpg/201608/2016-hd-fat-bob-6.jpg"
-				width="400"
-				height="225">
-				<img src="https://i2-prod.mirror.co.uk/incoming/article27187860.ece/ALTERNATES/s1200b/0_Upgrade-Its-significantly-better-although-more-expensive-than-the-standard-Street-Glide.jpg"
-				width="300"
-				height="225">
-				<img src="https://i.pinimg.com/originals/ce/85/50/ce8550f00368f542d1e9d8dea14acafc.jpg"
-				width="180"
-				height="225">"
-				<br>
-			</details></button>
+			<button>
+				<details>
+					<p>This is pictures of my favourate motorcycles:) :</p>
+					<br>
+					<img src="https://pictures.topspeed.com/IMG/jpg/201608/2016-hd-fat-bob-6.jpg"
+					width="400"
+					height="225">
+					<img src="https://i2-prod.mirror.co.uk/incoming/article27187860.ece/ALTERNATES/s1200b/0_Upgrade-Its-significantly-better-although-more-expensive-than-the-standard-Street-Glide.jpg"
+					width="300"
+					height="225">
+					<img src="https://i.pinimg.com/originals/ce/85/50/ce8550f00368f542d1e9d8dea14acafc.jpg"
+					width="180"
+					height="225">"
+					<br>
+				</details>
+			</button>
 		</div>
 	</body>
 </html>
