@@ -1,0 +1,40 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+.BikeTesting {
+    text-align: center;
+}
+.TestingTesting {
+    text-align: center;
+}
+.TitleOfTechExperiance {
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+.UserSignIn {
+    text-align: center;
+}
+.HIDETHIS {
+    display: none !important;
+}
+.ExperianceDiv {
+    text-align: center;
+}
+.Experiance {
+    text-align: left;
+    line-height: 0.3em;
+}
+.ExperianceFieldset {
+    text-align: left;
+}
+.JustCenter {
+    text-align: center;
+}
+.ListOfTechDiv {
+    text-align: center;
+}
+.HeaderFormat {
+    line-height: 0.5em;
+}
