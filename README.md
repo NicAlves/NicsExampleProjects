@@ -2,4 +2,5 @@ Dreaming of being a dev.
 
 One day :)
 
-First Website: https://nicportfolio.w3spaces.com/
+First Website (most likely not up to date as I am upgrading rapidly the offline version): 
+https://nicportfolio.w3spaces.com/
