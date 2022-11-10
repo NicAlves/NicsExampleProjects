@@ -48,7 +48,7 @@ while UserGuess != GeneratedNumber:
       
       UserGuess = int(input("Please choose a number between 1 and 100: "))
 
-
+# Ending screen:
 time.sleep(1)
 os.system('cls')
 print("===================================")
