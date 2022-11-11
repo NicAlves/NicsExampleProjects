@@ -6,7 +6,11 @@ First Website (most likely not up to date as I am upgrading rapidly the offline 
 https://nicportfolio.w3spaces.com/
 
 Best Projects So Far:
+
 Web Development - PortfolioSite
+
 C# - FinanceCalculator
+
 Python - NumberGuessingGame
+
 PowerShell - ActiveDirectoryAddUser.ps1
