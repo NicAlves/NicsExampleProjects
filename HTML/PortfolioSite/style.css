@@ -1,5 +1,5 @@
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: lightskyblue;
 }
 .BikeTesting {
     text-align: center;
@@ -37,4 +37,8 @@ header {
 }
 .HeaderFormat {
     line-height: 0.5em;
+}
+h1 {
+    font-family: sans-serif;
+    color: black;
 }
