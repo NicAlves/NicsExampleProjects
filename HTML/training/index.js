@@ -1,7 +1,5 @@
-let FavItem = {
-    Name: "Pizza",
-    Rating: 10
-};
-FavItem.Name = 'Coffee';
+let UserName = null;
 
-console.log(FavItem.Name);
+UserName = 'Hi there'
+
+console.log(UserName);

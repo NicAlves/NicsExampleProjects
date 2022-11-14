@@ -1,5 +1,12 @@
+html {
+    color: white;
+}
 body {
-    background-color: lightskyblue;
+    background-color: black;
+}
+h1 {
+    font-family: Papyrus;
+    color: red;
 }
 h3 {
     font-family: Papyrus;
