@@ -1,14 +1,7 @@
-body {
-    background-color: lightskyblue;
-}
-.BikeTesting {
-    text-align: center;
-}
-.TestingTesting {
-    text-align: center;
-}
-.TitleOfTechExperiance {
-    text-align: center;
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 header {
     text-align: center;
@@ -37,8 +30,26 @@ header {
 }
 .HeaderFormat {
     line-height: 0.5em;
+    border: solid red;
+    border-radius: 10px;
 }
 h1 {
     font-family: sans-serif;
+    color: red;
+}
+.BikeTesting {
+    text-align: center;
+}
+.TestingTesting {
+    text-align: center;
+}
+.TitleOfTechExperiance {
+    text-align: center;
+}
+fieldset {
     color: black;
+}
+.PersonalStatement {
+    border: solid red;
+    border-radius: 10px;
 }
