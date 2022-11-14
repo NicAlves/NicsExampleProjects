@@ -2,6 +2,14 @@ html {
     color: white;
     text-align: center;
 }
+header {
+    border-radius: 10px;
+    border: solid 10px red;
+}
+main {
+    border-radius: 10px;
+    border: solid 10px red;
+}
 body {
     background-color: black;
 }
