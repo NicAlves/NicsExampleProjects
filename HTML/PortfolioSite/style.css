@@ -53,3 +53,6 @@ fieldset {
     border: solid red;
     border-radius: 10px;
 }
+hr {
+    color: red;
+}

@@ -7,7 +7,7 @@ https://nicportfolio.w3spaces.com/
 
 Best Projects So Far:
 
-Web Development - PortfolioSite
+HTML/CSS/JS - Web Development - PortfolioSite
 
 C# - FinanceCalculator
 
