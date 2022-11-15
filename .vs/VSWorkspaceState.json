@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HTML",
+    "\\HTML\\PortfolioSite",
+    "\\Python",
+    "\\Python\\NumberGuessingGame",
+    "\\Python\\NumberGuessingGame\\NumberGuessingGame"
   ],
-  "SelectedNode": "\\ZombieShooter.sln",
+  "SelectedNode": "\\Python\\NumberGuessingGame\\NumberGuessingGame\\NumberGuessingGame.py",
   "PreviewInSolutionExplorer": false
 }
