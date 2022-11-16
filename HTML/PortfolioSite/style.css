@@ -31,7 +31,7 @@ header {
 .HeaderFormat {
     line-height: 0.5em;
     border: solid red;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 20px 30px 20px 30px;
 }
 h1 {
@@ -52,7 +52,7 @@ fieldset {
 }
 .PersonalStatement {
     border: solid red;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 10px 30px 10px 30px;
 }
 hr {
@@ -60,6 +60,6 @@ hr {
 }
 .AboutMe {
     border: solid red;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 10px 30px 10px 30px;
 }
