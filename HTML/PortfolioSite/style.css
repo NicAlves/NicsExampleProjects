@@ -32,10 +32,11 @@ header {
     line-height: 0.5em;
     border: solid red;
     border-radius: 10px;
+    padding: 20px 30px 20px 30px;
 }
 h1 {
     font-family: sans-serif;
-    color: red;
+    color: white;
 }
 .BikeTesting {
     text-align: center;
@@ -52,7 +53,13 @@ fieldset {
 .PersonalStatement {
     border: solid red;
     border-radius: 10px;
+    padding: 10px 30px 10px 30px;
 }
 hr {
     color: red;
+}
+.AboutMe {
+    border: solid red;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
 }
